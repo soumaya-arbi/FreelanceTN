@@ -1,0 +1,39 @@
+{
+  "name": "freelancetn",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@12.15.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 8443",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 8443",
+    "preview": "next start -p 8443",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "format": "oxfmt"
+  },
+  "dependencies": {
+    "@dicebear/collection": "^9.4.2",
+    "@dicebear/core": "^9.4.3",
+    "mongodb": "^7.8.0",
+    "next": "^16.4.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.2",
+    "oxfmt": "^0.2.0",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^5.1.0"
+  }
+}

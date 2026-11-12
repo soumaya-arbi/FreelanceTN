@@ -1,0 +1,75 @@
+node_modules/
+.next/
+.next-build/
+dist/
+build/
+.cache/
+.env*
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.claude-replay.*
+.tmp-*
+/.figma/design-context/
+
+# Platform-managed agentplat state, not project source. In the
+# client-initiated single-repo workspace layout (make's `Path: "."` spec) the
+# repo root IS the workspace root, so these land inside this repo rather than
+# beside it.
+/.plugins/
+/.opencode-skills/
+
+# Uploads locaux (photos de profil) : fichiers utilisateurs, non versionnés.
+backend/src/FreelanceTn.Api/App_Data/
+# Python / FastAPI
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Hardhat / Blockchain
+hardhat/artifacts/
+hardhat/cache/
+hardhat/typechain-types/
+
+# Build et couverture
+coverage/
+.nyc_output/
+
+# Bases de données et sauvegardes locales
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+
+# Clés et certificats privés
+*.pem
+*.p12
+*.pfx
+
+# Autoriser les modèles de configuration sans secrets
+!.env.example
+!.env.*.example
+!**/.env.example
+!**/.env.*.example
+# Local recovery and temporary files
+_recovery_backup/
+tmp-cv-audit/
+tmp-cv-inspect/
+.claude/
+.sf/
+
+# Local cookies and test payloads
+cookie*.txt
+task_payload.json
+dicebear-debug.mjs
+
+# Use pnpm as the project package manager
+package-lock.json

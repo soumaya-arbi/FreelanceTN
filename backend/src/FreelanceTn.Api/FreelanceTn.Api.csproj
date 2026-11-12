@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Secrets locaux (Auth:Email:Password...) : stockés hors du dépôt, dans
+         %APPDATA%\Microsoft\UserSecrets\freelancetn-api-dev\secrets.json -->
+    <UserSecretsId>freelancetn-api-dev</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.15" />
+    <PackageReference Include="MongoDB.Driver" Version="3.12.0" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+    <PackageReference Include="QuestPDF" Version="2026.9.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
+  </ItemGroup>
+
+  <!-- Les liens de vérification/réinitialisation écrits dans la boîte e-mail
+       locale ne doivent jamais entrer dans les artefacts de publication. -->
+  <ItemGroup>
+    <Content Remove="App_Data/dev-emails/**" />
+    <None Remove="App_Data/dev-emails/**" />
+  </ItemGroup>
+
+</Project>

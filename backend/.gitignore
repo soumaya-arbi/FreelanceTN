@@ -1,0 +1,18 @@
+# Build
+bin/
+obj/
+*.user
+
+# Secrets locaux (ne jamais committer)
+appsettings.Development.json
+appsettings.Local.json
+.env
+.env.*
+
+# JetBrains / VS
+.vs/
+.idea/
+*.suo
+
+# Keep the safe environment template versioned
+!.env.example

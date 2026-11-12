@@ -1,0 +1,17 @@
+{
+  "name": "freelancetn-hardhat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Réseau Hardhat local (chainId 31337) pour tester les paiements MetaMask de FreelanceTN.",
+  "scripts": {
+    "node": "hardhat node --hostname 127.0.0.1 --port 8545",
+    "compile": "hardhat compile",
+    "accounts": "hardhat run scripts/accounts.js --network localhost",
+    "smoke": "hardhat run scripts/smoke-transfer.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.22.17"
+  }
+}

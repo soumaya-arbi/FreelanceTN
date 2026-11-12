@@ -1,0 +1,61 @@
+{
+  "name": "FreelanceTN — Freelancer Marketplace Platform",
+  "short_name": "FreelanceTN",
+  "description": "Find talent, manage projects, tasks, quotes, invoices, feedback, and portfolios in one workspace.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#5145e5",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Client workspace",
+      "url": "/client",
+      "icons": [
+        { "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Freelancer dashboard",
+      "url": "/freelancer/dashboard",
+      "icons": [
+        { "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    },
+    {
+      "name": "Tasks",
+      "url": "/freelancer/tasks",
+      "icons": [
+        { "src": "/icons/icon-96.png", "sizes": "96x96", "type": "image/png" }
+      ]
+    }
+  ]
+}
